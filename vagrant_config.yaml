@@ -1,0 +1,31 @@
+- host: zabbixserver
+  ip: '192.168.33.75'
+  memory: '2048'
+  cpu_num: '2'
+  script:
+   - /vagrant/for_zab/zab_serv.sh
+
+
+- host: agent1
+  ip: '192.168.33.85'
+  memory:
+  cpu_num:
+  script:
+   - /vagrant/for_zab/zab_ag.sh
+
+- host: agent2
+  ip: '192.168.33.95'
+  memory:
+  cpu_num:
+  script:
+   - /vagrant/for_zab/zab_ag.sh
+
+- host: agent3
+  ip: '192.168.33.105'
+  memory: '1024'
+  cpu_num:
+  script:
+   - /vagrant/for_zab/zab_ag.sh
+
+
+   
